@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Principal</title>
+
+  <style>
+    :root {
+      --blue: #1E90FF;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: var(--blue);
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      color: var(--white);
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      margin: 10px;
+      background: var(--white);
+      color: var(--blue);
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 10px;
+      transition: transform 0.2s, background 0.2s;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #f8f8f8;
+      transform: scale(1.05);
+    }
+  </style>
+
+</head>
+<body>
+
+  <div>
+    <h1>Bienvenido</h1>
+    <a href="conversor.html" class="btn">Ir a Página 1</a>
+    <a href="calcimc.html" class="btn">Ir a Página 2</a>
+  </div>
+
+</body>
+</html>

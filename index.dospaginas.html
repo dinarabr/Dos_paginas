@@ -1,54 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Página Principal</title>
+
   <style>
+    :root {
+      --blue: #1E90FF;
+      --white: #ffffff;
+    }
+
     body {
-      background-color: #1E90FF; /* azul */
+      margin: 0;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
+      background: var(--blue);
       font-family: Arial, sans-serif;
-    }
-
-    .container {
       text-align: center;
     }
 
     h1 {
-      color: white;
+      color: var(--white);
       margin-bottom: 30px;
     }
 
     .btn {
-      display: inline-block;
       padding: 15px 30px;
       margin: 10px;
-      background-color: white;
-      color: #1E90FF;
+      background: var(--white);
+      color: var(--blue);
       text-decoration: none;
       font-size: 18px;
       border-radius: 10px;
-      transition: 0.3s;
+      transition: transform 0.2s, background 0.2s;
+      display: inline-block;
     }
 
     .btn:hover {
-      background-color: #f0f0f0;
+      background: #f8f8f8;
       transform: scale(1.05);
     }
   </style>
+
 </head>
 <body>
-  <div class="container">
+
+  <div>
     <h1>Bienvenido</h1>
-    <!-- Cambiá page1.html y page2.html por los nombres de tus páginas -->
     <a href="conversor.html" class="btn">Ir a Página 1</a>
     <a href="calcimc.html" class="btn">Ir a Página 2</a>
   </div>
+
 </body>
 </html>
-
